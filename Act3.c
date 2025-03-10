@@ -7,7 +7,7 @@ int main ()
 	h = sqrt(pow(l,2)* pow((3*l),2));
 	pt = (3.1416*21)/2+44.28+28+21;
 	at = h*3+(3.1416*110.25)/2;
-	printf("El área total es: %f\n",at);
-	printf("El perímetro total es: %f\n",pt);
+	printf("El Ã¡rea total es: %f\n",at);
+	printf("El perÃ­metro total es: %f\n",pt);
 	return 0;
 }
