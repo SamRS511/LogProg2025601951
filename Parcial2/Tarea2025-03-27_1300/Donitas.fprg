@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Donitas"/>
+        <attribute name="authors" value="saman"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 07:21:46 p. m."/>
+        <attribute name="created" value="c2FtYW47U0FNTVk7MjAyNS0wMy0yNjswNjo0MTowMCBwLiBtLjsyMzgy"/>
+        <attribute name="edited" value="c2FtYW47U0FNTVk7MjAyNS0wMy0yNjswNzoyMTo0NiBwLiBtLjsxOzI0OTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Precio" type="Integer" array="False" size=""/>
+            <declare name="Donitas" type="Integer" array="False" size=""/>
+            <declare name="Total" type="Integer" array="False" size=""/>
+            <input variable="Donitas"/>
+            <if expression="Donitas&gt;=50">
+                <then>
+                    <assign variable="Precio" expression="8"/>
+                </then>
+                <else>
+                    <if expression="Donitas&gt;=30">
+                        <then>
+                            <assign variable="Precio" expression="9"/>
+                        </then>
+                        <else>
+                            <assign variable="Precio" expression="10"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="Total" expression="Donitas*Precio"/>
+            <output expression="&quot;Tu costo total es de&quot;" newline="True"/>
+            <output expression="Total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

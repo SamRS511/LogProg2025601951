@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Problema4"/>
+        <attribute name="authors" value="saman"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 05:59:52 p. m."/>
+        <attribute name="created" value="c2FtYW47U0FNTVk7MjAyNS0wMy0yNjswNTo1MDoxNCBwLiBtLjsyMzg2"/>
+        <attribute name="edited" value="c2FtYW47U0FNTVk7MjAyNS0wMy0yNjswNTo1OTo1MiBwLiBtLjsxOzI1MDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <input variable="N"/>
+            <if expression="N%2==0">
+                <then>
+                    <output expression="&quot;Es m&#250;ltiplo del 2&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="N%3==0">
+                <then>
+                    <output expression="&quot;Es m&#250;ltiplo del 3&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="N%5==0">
+                <then>
+                    <output expression="&quot;Es m&#250;ltiplo de 5&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
