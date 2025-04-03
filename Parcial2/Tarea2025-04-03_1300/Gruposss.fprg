@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Gruposss"/>
+        <attribute name="authors" value="saman"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-02 09:49:45 p. m."/>
+        <attribute name="created" value="c2FtYW47U0FNTVk7MjAyNS0wNC0wMjswOTozMjoxNyBwLiBtLjsyMzg4"/>
+        <attribute name="edited" value="c2FtYW47U0FNTVk7MjAyNS0wNC0wMjswOTo0OTo0NSBwLiBtLjsyOzI1MDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Dime la inicial de tu nombre&quot;" newline="True"/>
+            <declare name="Inicial" type="String" array="False" size=""/>
+            <input variable="Inicial"/>
+            <output expression="&quot;Coloca tu sexo: F o M&quot;" newline="True"/>
+            <declare name="Sexo" type="String" array="False" size=""/>
+            <input variable="Sexo"/>
+            <if expression="Sexo==&quot;F&quot;">
+                <then>
+                    <if expression="Inicial&lt;&quot;M&quot;">
+                        <then>
+                            <output expression="&quot;Eres del grupo A&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Eres del grupo B&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="Inicial&gt;&quot;N&quot;">
+                        <then>
+                            <output expression="&quot;Grupo A&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Grupo B&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
