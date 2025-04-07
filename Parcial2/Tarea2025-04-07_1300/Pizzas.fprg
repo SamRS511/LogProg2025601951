@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Pizzas"/>
+        <attribute name="authors" value="saman"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-06 09:43:45 p. m."/>
+        <attribute name="created" value="c2FtYW47U0FNTVk7MjAyNS0wNC0wNjswODo0Mjo1NCBwLiBtLjsyMzkz"/>
+        <attribute name="edited" value="c2FtYW47U0FNTVk7MjAyNS0wNC0wNjswOTo0Mzo0NSBwLiBtLjsyOzI1MDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Tenemos pizzas vegetarianas y no vegetarianas, coloca un 1 para vegetarianas, o un 2 en  caso de que desees otro tipo de pizza&quot;" newline="True"/>
+            <declare name="Pizza" type="String" array="False" size=""/>
+            <input variable="Pizza"/>
+            <if expression="Pizza==&quot;1&quot;">
+                <then>
+                    <output expression="&quot;Tenemos pimiento o tofu, escribe qu&#233; ingrediente deseas, 1 es Pimiento y 2 es tofu, s&#243;lo podemos colocar uno en tu pizza&quot;" newline="True"/>
+                    <declare name="Opc" type="String" array="False" size=""/>
+                    <input variable="Opc"/>
+                    <if expression="Opc==&quot;1&quot;">
+                        <then>
+                            <output expression="&quot;Tu pizza es vegetariana, contiene: Pimiento, mozzarella y salsa de tomate&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="Opc==&quot;2&quot;">
+                                <then>
+                                    <output expression="&quot;Tu pizza SI es vegetariana contiene: Tofu, mozzarella y salsa de tomate&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="Pizza==&quot;2&quot;">
+                        <then>
+                            <output expression="&quot;Tenemos Pepperoni, Jam&#243;n y Salm&#243;n, escribe qu&#233; ingrediente deseas, 1 es Pepperoni, 2 es Jam&#243;n y 3 es Salm&#243;n s&#243;lo podemos colocar uno en tu pizza&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <declare name="OPC" type="String" array="False" size=""/>
+                    <input variable="OPC"/>
+                    <if expression="OPC==&quot;1&quot;">
+                        <then>
+                            <output expression="&quot;Tu pizza NO es vegetariana, contiene: Pepperoni, Mozzarella y salsa de tomate&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="OPC==&quot;2&quot;">
+                                <then>
+                                    <output expression="&quot;Tu pizza NO es vegetariana, contiene: Jam&#243;n, Mozzarella y salsa de tomate&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="OPC==&quot;3&quot;">
+                                        <then>
+                                            <output expression="&quot;Tu pizza NO es vegetariana, contiene: Salm&#243;n, Mozzarella y salsa de tomate&quot;" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
