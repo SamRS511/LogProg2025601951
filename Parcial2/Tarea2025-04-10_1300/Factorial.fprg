@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Factorial"/>
+        <attribute name="authors" value="saman"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-09 07:02:14 p. m."/>
+        <attribute name="created" value="c2FtYW47U0FNTVk7MjAyNS0wNC0wOTswNDoyNToxMiBwLiBtLjsyMzg3"/>
+        <attribute name="edited" value="c2FtYW47U0FNTVk7MjAyNS0wNC0wOTswNzowMjoxNCBwLiBtLjsyOzI0OTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N" type="Real" array="False" size=""/>
+            <output expression="&quot;Ingresa un n&#250;mero&quot;" newline="True"/>
+            <input variable="N"/>
+            <if expression="N&lt;0">
+                <then>
+                    <output expression="&quot;Error&quot;" newline="True"/>
+                </then>
+                <else>
+                    <declare name="F" type="Real" array="False" size=""/>
+                    <declare name="i" type="Real" array="False" size=""/>
+                    <assign variable="F" expression="1"/>
+                    <assign variable="i" expression="1"/>
+                    <for variable="i" start="1" end="N" direction="inc" step="1">
+                        <assign variable="F" expression="F*i"/>
+                    </for>
+                    <output expression="&quot;Su factorial es &quot;" newline="True"/>
+                    <output expression="F" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

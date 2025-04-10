@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Fibonacci"/>
+        <attribute name="authors" value="saman"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-09 07:45:55 p. m."/>
+        <attribute name="created" value="c2FtYW47U0FNTVk7MjAyNS0wNC0wOTswNzowMjo0MSBwLiBtLjsyMzg3"/>
+        <attribute name="edited" value="c2FtYW47U0FNTVk7MjAyNS0wNC0wOTswNzo0NTo1NSBwLiBtLjs1OzI1MTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A" type="Integer" array="False" size=""/>
+            <declare name="B" type="Integer" array="False" size=""/>
+            <declare name="C" type="Integer" array="False" size=""/>
+            <declare name="Contador" type="Integer" array="False" size=""/>
+            <output expression="&quot;Coloca desde qu&#233; n&#250;mero deseas la sucesi&#243;n 1 o 2&quot;" newline="True"/>
+            <declare name="Opcion" type="Integer" array="False" size=""/>
+            <input variable="Opcion"/>
+            <if expression="Opcion==1">
+                <then>
+                    <assign variable="A" expression="1"/>
+                    <assign variable="B" expression="2"/>
+                    <assign variable="Contador" expression="1"/>
+                    <output expression="A" newline="True"/>
+                    <output expression="B" newline="True"/>
+                    <while expression="Contador&lt;64">
+                        <assign variable="C" expression="A+B"/>
+                        <output expression="C" newline="True"/>
+                        <assign variable="A" expression="B"/>
+                        <assign variable="B" expression="C"/>
+                        <assign variable="Contador" expression="Contador+1"/>
+                    </while>
+                </then>
+                <else>
+                    <if expression="Opcion==2">
+                        <then>
+                            <assign variable="A" expression="2"/>
+                            <assign variable="B" expression="2"/>
+                            <assign variable="Contador" expression="1"/>
+                            <output expression="A" newline="True"/>
+                            <output expression="B" newline="True"/>
+                            <while expression="Contador&lt;64">
+                                <assign variable="C" expression="A+B"/>
+                                <output expression="C" newline="True"/>
+                                <assign variable="A" expression="B"/>
+                                <assign variable="B" expression="C"/>
+                                <assign variable="Contador" expression="Contador+1"/>
+                            </while>
+                        </then>
+                        <else>
+                            <output expression="&quot;Error, coloque 1 o 2&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
